@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Senior</title>
+</head>
+<body>
+    <header> </header>
+    <div style="width:100%; margin-left: 7px; margin-right: 7px">
+        <div style="width:100%">
+            <input class="botao texto" type="button" value="Incluir Pessoa" onclick="IncluirPessoa()"/>
+        </div>
+        <div class="separador-linha">&nbsp;</div>
+        <div>
+            <div class="box"> 
+                <div class="texto"> 
+                    Novo Check In 
+                </div>           
+            </div>
+            <div class="bordaTela">
+                <div class="separador-linha">&nbsp;</div>
+                <div class="wrapper">
+                    <div class="divColuna">
+                        Data/hora de entrada                
+                    </div> 
+                    <div class="divColuna">
+                        Data/hora de saida                
+                    </div>  
+                </div>
+                <div class="separador-linha">&nbsp;</div>
+                <div class="wrapper">
+                    <div class="divColuna">
+                        <input type="text" name="dtHrEntrada" class="input"/>
+                    </div> 
+                    <div class="divColuna">
+                        <input type="text" name="dtHrSaida" class="input"/>
+                    </div>  
+                </div>            
+                <div class="separador-linha">&nbsp;</div>
+                <div class="wrapper">
+                    <div class="divColuna">
+                        Pessoa                
+                    </div> 
+                    <div class="divColuna">
+                        &nbsp;               
+                    </div>  
+                </div>
+                <div class="separador-linha">&nbsp;</div>
+                <div class="wrapper">
+                    <div class="divColuna">
+                        <input type="text" name="nmPessoa" class="input"/>
+                    </div> 
+                    <div class="divColuna">
+                        <input class="checkbox" type="checkbox" name="idPossuiVeiculo"/> Possui Veículo
+                    </div>  
+                </div>
+                <div style="width:100%">
+                    <input class="botao texto" type="button" value="Salvar" onclick="Salvar()"/>
+                </div>
+            </div>
+        </div>
+        <div class="separador-linha">&nbsp;</div>
+        <div>
+            <div class="box"> 
+                <div class="texto"> 
+                    Consultas 
+                </div>           
+            </div>
+            <div class="bordaTela">
+                <div class="separador-linha">&nbsp;</div>
+                <div class="divColuna">
+                    Filtrar por:                
+                </div>                                
+                <div class="separador-linha">&nbsp;</div>
+                <div style="width:100%;">
+                    <div class="divColuna">
+                        <input type="radio" name="idPessoasPresentes" class="checkbox"/>Pessoas ainda presentes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="idPessoasDeixHotel" class="checkbox"/>Pessoas que já deixaram o hotel
+                    </div>                     
+                </div>            
+                <div class="separador-linha">&nbsp;</div>
+                <div class="lista">
+                    <div>
+
+
+                    </div>                                                 
+                    <div style="width:100%">                
+                        <input class="botao-previous-next" type="button" value="Previous" onclick="Anterior()"/>
+                        <input class="botao-previous-next" type="button" value="Next" onclick="Proximo()"/>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+         
+    
+</body>
+</html>
+<style type="text/css">
+    .texto{       
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;              
+        padding-bottom: 10px; 
+        
+    }
+    .box{
+        width:98%;
+        height:30px;
+        background-color:#2E6EB0;
+        border-radius: 7px 7px 0 0;
+        padding-left: 15px;
+        padding-top: 10px;
+        color: #FFFFFF;
+    }
+    .input{
+        width: 80%;
+        height:25px;
+        border-width: 1px;        
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+    .checkbox{
+        border-radius: 4px;
+        border: 1px solid #ccc;       
+    }
+    .separador-linha{        
+        width:98%;        
+        height:7px;        
+    }
+    .botao{
+        padding-left: 25px;        
+        padding-right: 25px;        
+        padding-top: 10px;        
+        padding-bottom: 10px; 
+        margin-top: 15px;       
+        border-radius: 7px;
+        background-color:#2E6EB0;
+    }
+    .botao-previous-next{
+        background-color:#FFFFFF;
+        border-radius: 7px;
+        padding-left: 25px;        
+        padding-right: 25px;        
+        padding-top: 10px;        
+        padding-bottom: 10px;
+        margin-top: 15px;  
+    }
+    .divColuna{
+        width: 49%;
+        box-sizing: border-box;
+        /*padding: 1rem;*/
+        /*margin: 1rem; */       
+        width: calc((100% / 2) - 2rem);        
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;        
+    }    
+    .bordaTela{
+        border: 2px solid #2E6EB0;
+        padding: 10px;        
+        margin-right: 23px;
+    }
+     
+</style>
+
+<script>
+    function Salvar(){
+        alert("salvou");
+    }    
+    function IncluirPessoa(){
+        alert('incluiu');
+    }
+    function Anterior(){
+        alert('anterior');
+    }
+    function Proximo(){
+        alert('proximo');
+    }
+
+</script>
